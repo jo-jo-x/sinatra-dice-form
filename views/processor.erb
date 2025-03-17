@@ -1,0 +1,17 @@
+<h1><%= "#{@dicerolls.fetch("dice")}d#{@dicerolls.fetch("sides")}" %></h1>
+
+<a href="/process_roll?dice=<%= @dicerolls.fetch("dice").to_s %>&sides=<%= @dicerolls.fetch("sides").to_s %>">Roll again</a>
+
+|
+
+<a href="/">Go back home</a>
+<%= "#{@dicerolls}" %>
+<ul> 
+  <% @r2.each do |country| %>
+      <li>
+        <a href=/<%= @country_code %>/<%= country %>>
+          Convert 1 <%= @country_code %> to <%= country %>...
+        </a>
+      </li>
+  <% end %>
+ </ul>
