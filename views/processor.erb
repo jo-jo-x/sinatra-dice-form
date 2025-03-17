@@ -5,13 +5,11 @@
 |
 
 <a href="/">Go back home</a>
-<%= "#{@dicerolls}" %>
-<ul> 
-  <% @r2.each do |country| %>
-      <li>
-        <a href=/<%= @country_code %>/<%= country %>>
-          Convert 1 <%= @country_code %> to <%= country %>...
-        </a>
-      </li>
+
+<ol> 
+  <% @rolls.each do |a_roll| %>
+    <li>
+      <em>Result:</em> <strong><%= a_roll %></strong>
+    </li>
   <% end %>
- </ul>
+</ol>
