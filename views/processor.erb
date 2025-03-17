@@ -1,6 +1,6 @@
-<h1><%= "#{@dicerolls.fetch("dice")}d#{@dicerolls.fetch("sides")}" %></h1>
+<h1><%= "#{@dicerolls["dice"]}d#{@dicerolls["sides"]}" %></h1>
 
-<a href="/process_roll?dice=<%= @dicerolls.fetch("dice").to_s %>&sides=<%= @dicerolls.fetch("sides").to_s %>">Roll again</a>
+<a href="/process_roll?dice=<%= @dicerolls["dice"].to_s %>&sides=<%= @dicerolls["sides"].to_s %>">Roll again</a>
 
 |
 

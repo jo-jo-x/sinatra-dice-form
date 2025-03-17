@@ -8,9 +8,9 @@ end
 get("/process_roll") do
   @dicerolls = params
 
-  @num_dice = @dicerolls.fetch("dice").to_i
+  @num_dice = @dicerolls["dice"].to_i
 
-  @sides = @dicerolls.fetch("sides").to_i
+  @sides = @dicerolls["sides"].to_i
 
   @rolls = []
 
